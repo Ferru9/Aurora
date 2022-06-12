@@ -10,6 +10,9 @@ export function NavLink({ path, label, children, ...rest }) {
 
 export function Link({ path, label, children, ...rest }) {
   return (
-    <h1>Link</h1>
+    <A {...rest} href={path}>
+      {children || label}
+
+    </A>
   );
 }
